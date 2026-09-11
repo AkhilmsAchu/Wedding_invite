@@ -31,7 +31,7 @@ export const video = (() => {
         vid.className = wrap.getAttribute('data-vid-class');
         vid.loop = true;
         vid.muted = true;
-        vid.controls = true;
+        vid.controls = false;
         vid.autoplay = false;
         vid.playsInline = true;
         vid.playbackRate = 0.5;
@@ -49,6 +49,7 @@ export const video = (() => {
         const resToVideo = (res) => {
             vid.addEventListener('loadedmetadata', () => {
                 vid.style.removeProperty('height');
+                vid.playbackRate = 0.5;
                 document.getElementById('video-love-stroy-loading')?.remove();
             }, { once: true });
 
