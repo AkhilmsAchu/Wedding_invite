@@ -34,6 +34,7 @@ export const video = (() => {
         vid.controls = true;
         vid.autoplay = false;
         vid.playsInline = true;
+        vid.playbackRate = 0.5;
         vid.preload = 'metadata';
         vid.disableRemotePlayback = true;
         vid.disablePictureInPicture = true;
