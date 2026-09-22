@@ -180,8 +180,8 @@ export const guest = (() => {
      * @returns {void}
      */
     const modal = (img) => {
-        document.getElementById('button-modal-click').setAttribute('href', img.src);
-        document.getElementById('button-modal-download').setAttribute('data-src', img.src);
+        // document.getElementById('button-modal-click').setAttribute('href', img.src);
+        // document.getElementById('button-modal-download').setAttribute('data-src', img.src);
 
         const i = document.getElementById('show-modal-image');
         i.src = img.src;
@@ -346,9 +346,9 @@ https://maps.app.goo.gl/firJdKsEkEQBxjK96
         window.addEventListener('resize', util.debounce(slide));
         document.addEventListener('undangan.progress.done', () => booting());
         document.addEventListener('hide.bs.modal', () => document.activeElement?.blur());
-        document.getElementById('button-modal-download').addEventListener('click', (e) => {
-            img.download(e.currentTarget.getAttribute('data-src'));
-        });
+        // document.getElementById('button-modal-download').addEventListener('click', (e) => {
+        //     img.download(e.currentTarget.getAttribute('data-src'));
+        // });
 
         if (!token || token.length <= 0) {
             document.getElementById('comment')?.remove();
