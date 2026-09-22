@@ -1,0 +1,20 @@
+/* ============================================
+   Disable text selection
+   ============================================ */
+
+body {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+/* ============================================
+   Prevent image dragging
+   ============================================ */
+
+img {
+    -webkit-user-drag: none;
+    user-drag: none;
+}
