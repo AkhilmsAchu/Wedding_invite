@@ -34,7 +34,7 @@ export const video = (() => {
         vid.controls = false;
         vid.autoplay = false;
         vid.playsInline = true;
-        vid.playbackRate = 0.5;
+        vid.playbackRate = 0.75;
         vid.preload = 'metadata';
         vid.disableRemotePlayback = true;
         vid.disablePictureInPicture = true;
@@ -49,7 +49,7 @@ export const video = (() => {
         const resToVideo = (res) => {
             vid.addEventListener('loadedmetadata', () => {
                 vid.style.removeProperty('height');
-                vid.playbackRate = 0.5;
+                vid.playbackRate = 0.75;
                 document.getElementById('video-love-stroy-loading')?.remove();
             }, { once: true });
 
